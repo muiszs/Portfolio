@@ -6,3 +6,21 @@ body {
   font-family: var(--font-jetbrains-mono), monospace;
 
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  }
+
+  .animate-float {
+  animation: float 3s ease-in-out infinite;
+  }
+
+  /* Pause the float while hovering so the flip feels clean */
+  .animate-float:hover {
+  animation-play-state: paused;
+  }

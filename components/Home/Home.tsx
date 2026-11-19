@@ -5,7 +5,6 @@ import Welcome_Header from "@/components/Home/Welcome Header/Welcome_Header";
 const home = () => {
   return (
     <>
-    <Welcome_Header />
     <Card />
     </>
   )

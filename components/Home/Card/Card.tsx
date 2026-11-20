@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Card = () => {
   return (
-    <div className='flex min-h-screen justify-center py-30'>
+    <div className='flex justify-center py-16'>
       {/* FLIP WRAPPER */}
       <div className='group h-[30rem] w-[55rem] [perspective:1000px] flex items-center justify-center'>
         <div className='relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]'>
@@ -35,9 +35,7 @@ const Card = () => {
 
                 {/* Skill tags */}
                 <div className='flex flex-wrap gap-2 mt-2'>
-                  <span className='rounded-full bg-white/10 px-3 py-1 text-xs'>Python</span>
-                  <span className='rounded-full bg-white/10 px-3 py-1 text-xs'>SQL</span>
-                  <span className='rounded-full bg-white/10 px-3 py-1 text-xs'>Machine Learning</span>
+                  <span className='rounded-full bg-white/10 px-3 py-1 text-xs'>Hover the card to see more</span>
                 </div>
 
               </div>
@@ -48,74 +46,70 @@ const Card = () => {
           <div className='absolute inset-0 h-full w-full rounded-xl bg-olive-900 p-4 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]'>
             <h3 className='text-xl font-bold'>Technologies</h3>
             <p className='text-white/60 text-m max-w-sm text-justify'>
-            These are the technologies I have been working with:
+              These are the technologies I have been working with:
             </p>
 
+            <div className="grid grid-cols-4 gap-4 mt-6">
+              {/* Item 1 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/python.png' alt='Python' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>Python</span>
+              </div>
 
+              {/* Item 2 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/sql-file.png' alt='SQL' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>SQL</span>
+              </div>
 
-          <div className="grid grid-cols-4 gap-4 mt-6">
-            {/* Item 1 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/python.png' alt='Python' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>Python</span>
+              {/* Item 3 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/html.png' alt='Html' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>HTML</span>
+              </div>
+
+              {/* Item 4 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/css-3.png' alt='CSS' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>CSS</span>
+              </div>
+
+              {/* Item 5 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/js.png' alt='JavaScript' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>JavaScript</span>
+              </div>
+
+              {/* Item 6 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/typescript.png' alt='TypeScript' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>TypeScript</span>
+              </div>
+
+              {/* Item 7 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/tailwindcss-icon.svg' alt='TailwindCSS' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>TailwindCSS</span>
+              </div>
+
+              {/* Item 8 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/docker.png' alt='Docker' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>Docker</span>
+              </div>
+
+              {/* Item 9 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/kubernetes-logo.png' alt='Kubernetes' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>Kubernetes</span>
+              </div>
+
+              {/* Item 10 */}
+              <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
+                <Image src='/logo/red-hat.svg' alt='RedHatOpenshift' width={32} height={32} className='object-contain' />
+                <span className='text-xs text-center font-medium'>Red Hat Openshift</span>
+              </div>
             </div>
-
-            {/* Item 3 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/sql-file.png' alt='SQL' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>SQL</span>
-            </div>
-
-            {/* Item 2 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/html.png' alt='Html' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>HTML</span>
-            </div>
-
-            {/* Item 2 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/css-3.png' alt='CSS' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>CSS</span>
-            </div>
-
-            {/* Item 2 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/js.png' alt='JavaScript' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>JavaScript</span>
-            </div>
-
-            {/* Item 2 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/typescript.png' alt='TypeScript' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>TypeScript</span>
-            </div>
-
-            {/* Item 2 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/tailwindcss-icon.svg' alt='TailwindCSS' width={32}   height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>TailwindCSS</span>
-            </div>
-
-            {/* Item 2 */}
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/docker.png' alt='Docker' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>Docker</span>
-            </div>
-
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/kubernetes-logo.png' alt='Kubernetes' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>Kubernetes</span>
-            </div>
-
-            <div className='flex flex-col items-center justify-center gap-2 p-3 rounded-xl hover:bg-white/10 transition-colors cursor-pointer'>
-              <Image src='/logo/red-hat.svg' alt='RedHatOpenshift' width={32} height={32} className='object-contain' />
-              <span className='text-xs text-center font-medium'>Red Hat Openshift</span>
-            </div>
-
-            
-          </div>
-
-            
           </div>
 
         </div>
